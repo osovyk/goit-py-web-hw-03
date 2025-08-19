@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    container_name: goit-pythonweb-hw-03
+    ports:
+      - "3000:3000"
+    environment:
+      STORAGE_DIR: /data
+    volumes:
+      - ./storage:/data

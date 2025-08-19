@@ -16,3 +16,7 @@ body {
 textarea {
   height: 250px;
 }
+
+main {
+    padding: 20px 0;
+}

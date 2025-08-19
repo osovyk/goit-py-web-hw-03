@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img alt="logo" src="/logo.png"/>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarsExample02">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link {% if current_path in ['/', '/index'] %}active{% endif %}" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if current_path.startswith('/message') %}active{% endif %}" href="/message">Send message</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if current_path == '/read' %}active{% endif %}" href="/read">Read messages</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
